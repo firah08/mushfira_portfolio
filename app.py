@@ -17,6 +17,12 @@ projects = [
         "tech": ["HTML", "JavaScript", "CSS"],
         "repo": "https://github.com/firah08/skillshiftclub",
     },
+    {
+        "name": "Personal Portfolio Website",
+        "description": "A personal portfolio website showcasing my projects, skills, and experiences.",
+        "tech": ["HTML", "JavaScript", "CSS"],
+        "repo": "https://github.com/firah08/mushfira_portfolio",
+    },
 ]
 
 events = [
