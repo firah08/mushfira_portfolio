@@ -332,70 +332,117 @@
 ════════════════════════════════════════════════════════════════════════════ -->
 <section id="about">
   <div class="container">
+
     <p class="section-label">06 / About</p>
     <h2 class="section-heading">A bit about me</h2>
     <div class="section-heading-bar"></div>
 
     <div class="about-grid">
-      <!-- Photo / avatar -->
-<div class="about-photo-wrap">
-  <div style="position:relative; display:inline-block;">
-    <div class="about-photo">
-      <img src="{{ url_for('static', filename='images/Photo.png') }}" alt="mush fira" style="width:100%;height:100%;object-fit:cover;" />
-    </div>
-  </div>
-</div>
-      <!-- Bio text -->
-      <div class="about-text">
-        <p>
-          I am a Year 2 Diploma in Business and Financial Technology student at
-          <span class="highlight">Nanyang Polytechnic</span>, building a strong foundation in finance, business
-          and technology with a focus on how they are used in modern finance.
-        </p>
 
-        <p>
-          I am particularly interested in
-          <span class="gold">financial analysis and FinTech</span>,
-          especially how data, digital platforms and financial systems can improve decision making,
-          efficiency and business performance. I am interested in this sector because finance is
-          changing quickly through technology and I want to understand both the analytical and
-          technical sides of it.
-        </p>
+      <!-- ================= Carousel ================= -->
+      <div class="about-carousel">
 
-        <div>
-          <p class="about-sub-heading">Areas I am interested in:</p>
-          <ul class="about-list gold" style="margin-top:10px;">
-            <li>Financial analysis</li>
-            <li>FinTech and digital finance</li>
-            <li>Data in business decision making</li>
-          </ul>
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <img src="{{ url_for('static', filename='images/about/Restore Photo 23-7-26 22.26_1.JPG') }}"
+               alt="Community Night">
+
+          <p class="photo-caption">
+            <strong>Sengkang Community Night 2026</strong><br>
+            Emceeing a community event and engaging residents throughout the evening.
+          </p>
         </div>
 
-        <p>
-          Alongside my studies, I am involved in volunteer work with
-          <span class="highlight">Sengkang North Youth Network</span>,
-          where I support community initiatives and work in team based environments.
-          This has helped me build:
-        </p>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="{{ url_for('static', filename='images/about/Restore Photo 23-7-26 22.26_1.JPG') }}"
+               alt="Education Awards">
 
-        <ul class="about-list teal">
-          <li>Communication skills</li>
-          <li>Teamwork and collaboration</li>
-          <li>Responsibility in group settings</li>
-        </ul>
+          <p class="photo-caption">
+            <strong>Sengkang North Education Awards</strong><br>
+            Hosting two award presentation sessions celebrating students' achievements.
+          </p>
+        </div>
 
-        <p>
-          I would describe myself as
-          <span class="highlight">disciplined, adaptable and detail oriented</span>,
-          with a strong willingness to learn. I am currently focused on improving my
-          analytical thinking, financial understanding and technical skills as I prepare for
-          opportunities in finance, FinTech and business analysis roles.
-        </p>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="{{ url_for('static', filename='images/about/EZY70238.JPG') }}"
+               alt="EcoFest">
+
+          <p class="photo-caption">
+            <strong>EcoFest 2026</strong><br>
+            Planning and hosting interactive stage games for residents.
+          </p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <img src="{{ url_for('static', filename='images/about/IMG_4317.jpg') }}"
+               alt="Halloween">
+
+          <p class="photo-caption">
+            <strong>Halloween Event 2025</strong><br>
+            Managing prize redemption for over 100 participants.
+          </p>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="{{ url_for('static', filename='images/about/Stakeholders & Participants.jpg') }}"
+               alt="Matcha Appreciation">
+
+          <p class="photo-caption">
+            <strong>Matcha Appreciation Workshop</strong><br>
+            Supporting school and community events while developing leadership and teamwork skills.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
       </div>
+
+      <!-- ================= Text ================= -->
+      <div class="about-text">
+
+        <p>
+          I am a Year 2 Diploma in
+          <span class="highlight">Business & Financial Technology</span>
+          student at
+          <span class="gold">Nanyang Polytechnic</span>, with a growing interest
+          in finance, FinTech and business analytics.
+        </p>
+
+        <p>
+          I enjoy understanding how technology and data can improve business
+          decisions and financial processes. Through my coursework and personal
+          projects, I continue to strengthen both my analytical and technical
+          skills while exploring the future of digital finance.
+        </p>
+
+        <p>
+          Outside the classroom, I actively volunteer with the
+          <span class="highlight">Sengkang North Youth Network</span>, where I
+          have had opportunities to organise community events, host programmes,
+          and work alongside volunteers and community partners. These experiences
+          have strengthened my communication, teamwork and confidence in working
+          with people from different backgrounds.
+        </p>
+
+        <p>
+          I believe that growth comes from stepping outside my comfort zone.
+          Whether I am building projects, volunteering, or taking on leadership
+          opportunities, I enjoy learning new skills, meeting new people and
+          continuously improving myself.
+        </p>
+
+      </div>
+
     </div>
+
   </div>
 </section>
-
 
 <!-- ════════════════════════════════════════════════════════════════════════════
      7. FOOTER
