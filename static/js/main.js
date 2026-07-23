@@ -122,10 +122,10 @@ if (slides.length > 0) {
     showSlide(currentSlide - 1);
   });
 
-  // Auto slide every 5 seconds
+  // Auto slide every 7 seconds
   setInterval(() => {
     showSlide(currentSlide + 1);
-  }, 5000);
+  }, 70000);
 
 }
 
