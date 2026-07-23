@@ -6,6 +6,12 @@ app = Flask(__name__)
 
 projects = [
     {
+       "name": "Contribo",
+       "description": "A cross-platform project management and contribution tracking system that helps teams coordinate projects through task assignment, proof-based completion, contribution scoring, and automated progress tracking across Discord and Telegram.",
+       "tech": ["Python", "Discord API", "Telegram API", "SQLite"],
+       "repo": "https://github.com/firah08/skillshiftclub",
+    },
+    {
         "name": "CoLab Management Platform",
         "description": "A social web platform that connects youth and elderly users through community events, user suggested activities, and admin led approval workflows.",
         "tech": ["Python", "Flask", "Jinja2", "JavaScript"],
@@ -26,6 +32,24 @@ projects = [
 ]
 
 events = [
+    {
+       "name": "Sengkang Community Night 2026",
+       "host": "Sengkang Community Club",
+       "date": "July 2026",
+       "takeaway": "Developed confidence in public speaking and event hosting by co-emceeing a large-scale community event, managing programme flow, and engaging residents throughout the evening.",
+    },
+    {
+       "name": "National Family Festival 2026",
+       "host": "Families for Life",
+       "date": "June 2026",
+       "takeaway": "Developed stronger public engagement and teamwork skills by interacting with families, and supporting an interactive booth activity for parents and children.",
+    },
+    {
+        "name": "Parents' Day Event",
+        "host": "Sengkang Community Club",
+        "date": "June 2026",
+        "takeaway": "Strengthened my communication and interpersonal skills by engaging with residents of different age groups, facilitating board games, and creating a welcoming environment that encouraged community interaction.",
+    },
     {
         "name": "Claude Code Workshop",
         "host": "SYAI × YouthTech SG",
