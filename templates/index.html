@@ -163,15 +163,20 @@
     <div class="section-heading-bar"></div>
 
     <div class="projects-grid">
-      {% for project in projects %}
-      <a href="{{ project.repo }}" target="_blank" rel="noopener noreferrer" class="card project-card">
+
+      <!-- Portfolio Website (Clickable) -->
+      <a href="https://github.com/firah08/mushfira_portfolio"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="card project-card">
+
         <div class="project-top">
           <div class="project-icon">
-            <!-- Folder icon -->
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776"/>
             </svg>
           </div>
+
           <span class="project-arrow">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
@@ -180,17 +185,73 @@
         </div>
 
         <div>
-          <p class="project-name">{{ project.name }}</p>
-          <p class="project-desc" style="margin-top:8px;">{{ project.description }}</p>
+          <p class="project-name">Portfolio Website</p>
+          <p class="project-desc" style="margin-top:8px;">
+            Personal portfolio showcasing my projects, experience and community involvement using Flask, HTML, CSS and JavaScript.
+          </p>
         </div>
 
         <div class="project-pills">
-          {% for t in project.tech %}
-          <span class="pill">{{ t }}</span>
-          {% endfor %}
+          <span class="pill">Flask</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
         </div>
+
       </a>
-      {% endfor %}
+
+      <!-- Contribo -->
+      <div class="card project-card">
+
+        <div class="project-top">
+          <div class="project-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776"/>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <p class="project-name">Contribo</p>
+          <p class="project-desc" style="margin-top:8px;">
+            Discord bot for project management that tracks tasks, meetings, attendance and contribution records.
+          </p>
+        </div>
+
+        <div class="project-pills">
+          <span class="pill">Python</span>
+          <span class="pill">Discord.py</span>
+          <span class="pill">SQLite</span>
+        </div>
+
+      </div>
+
+      <!-- CoLab -->
+      <div class="card project-card">
+
+        <div class="project-top">
+          <div class="project-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776"/>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <p class="project-name">CoLab</p>
+          <p class="project-desc" style="margin-top:8px;">
+            Community event management platform with RSVP, attendance tracking and volunteer management features.
+          </p>
+        </div>
+
+        <div class="project-pills">
+          <span class="pill">Flask</span>
+          <span class="pill">Bootstrap</span>
+          <span class="pill">SQLite</span>
+        </div>
+
+      </div>
+
     </div>
 
     <div class="github-cta">
@@ -201,13 +262,11 @@
         See all repositories on GitHub →
       </a>
     </div>
+
   </div>
 </section>
 
-
 <div class="divider"></div>
-
-
 <!-- ════════════════════════════════════════════════════════════════════════════
      4. EXPERIENCE — Events & Talks Attended
 ════════════════════════════════════════════════════════════════════════════ -->
@@ -342,61 +401,62 @@
       <!-- ================= Carousel ================= -->
       <div class="about-carousel">
 
-        <!-- Slide 1 -->
-        <!-- <div class="slide active">
+        <!-- Slide 1 (Future Event) -->
+        <!--
+        <div class="slide active">
           <img src="{{ url_for('static', filename='images/about/Restore Photo 23-7-26 22.26_1.JPG') }}"
                alt="Community Night">
 
           <p class="photo-caption">
             <strong>Sengkang Community Night 2026</strong><br>
-            Emceeing a community event and engaging residents throughout the evening.
+            Emceed a community event, engaging residents and ensuring the programme ran smoothly throughout the evening.
           </p>
-        </div> -->
+        </div>
+        -->
 
         <!-- Slide 2 -->
-        <div class="slide">
-          <img src="{{ url_for('static', filename='images/about/Restore Photo 23-7-26 22.26_1.JPG') }}"
-               alt="Education Awards">
+<div class="slide active">
+  <img src="{{ url_for('static', filename='images/about/Restore Photo 23-7-26 22.26_1.JPG') }}"
+       alt="Sengkang North Education Awards">
 
-          <p class="photo-caption">
-            <strong>Sengkang North Education Awards</strong><br>
-            Group Picture with Sengkang GRC Grassroots Organisation Ms Theodora Lai.
-          </p>
-        </div>
+  <p class="photo-caption">
+    <strong>Sengkang North Education Awards</strong><br>
+    Emceed two award presentation sessions, celebrating students' achievements and ensuring the programme ran smoothly for award recipients, guests and community leaders.
+  </p>
+</div>
 
-        <!-- Slide 3 -->
-        <div class="slide">
-          <img src="{{ url_for('static', filename='images/about/EZY70238.JPG') }}"
-               alt="EcoFest">
+<!-- Slide 3 -->
+<div class="slide">
+  <img src="{{ url_for('static', filename='images/about/EZY70238.JPG') }}"
+       alt="EcoFest 2026">
 
-          <p class="photo-caption">
-            <strong>EcoFest 2026</strong><br>
-            Hosting interactive stage games for residents.
-          </p>
-        </div>
-        <!-- Slide 5 -->
-        <div class="slide">
-          <img src="{{ url_for('static', filename='images/about/Stakeholders & Participants.jpg') }}"
-               alt="Matcha Appreciation">
-
-          <p class="photo-caption">
-            <strong>Matcha Appreciation Workshop</strong><br>
-            Connected with Matcha Appreciation Workshop participants by introducing them to Sengkang North Youth Network’s online platforms.
-          </p>
-        </div>
+  <p class="photo-caption">
+    <strong>EcoFest 2026</strong><br>
+    Planned and hosted interactive stage games, engaging more than 125 residents and creating an enjoyable experience throughout the event.
+  </p>
+</div>
 
         <!-- Slide 4 -->
         <div class="slide">
-          <img src="{{ url_for('static', filename='images/about/IMG_4317.jpg') }}"
-               alt="Halloween">
+          <img src="{{ url_for('static', filename='images/about/Stakeholders & Participants.jpg') }}"
+               alt="Matcha Appreciation Workshop">
 
           <p class="photo-caption">
-            <strong>Halloween Event 2025</strong><br>
-            Group Picture of all the volunteers for Halloween 2025.
+            <strong>Matcha Appreciation Workshop</strong><br>
+            Engaged participants and introduced them to Sengkang North Youth Network's social media platforms through QR code outreach.
           </p>
         </div>
 
-        
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="{{ url_for('static', filename='images/about/IMG_4317.jpg') }}"
+               alt="Halloween Event">
+
+          <p class="photo-caption">
+            <strong>Halloween Event 2025</strong><br>
+            Worked alongside fellow volunteers to support event operations and prize redemption for over 100 participants.
+          </p>
+        </div>
 
         <!-- Navigation -->
         <button class="prev">&#10094;</button>
@@ -408,34 +468,36 @@
       <div class="about-text">
 
         <p>
-          I am a Year 2 Diploma in
-          <span class="highlight">Business & Financial Technology</span>
-          student at
-          <span class="gold">Nanyang Polytechnic</span>, with a growing interest
-          in finance, FinTech and business analytics.
+          I am a Year 2 <span class="highlight">Business & Financial Technology</span>
+          student at <span class="gold">Nanyang Polytechnic.</span> I'm someone who 
+          enjoys taking on new challenges, whether that's building software, 
+          analysing financial information or engaging with the community through 
+          volunteering. I enjoy learning continuously and finding practical ways 
+          technology can improve business processes and everyday experiences.
         </p>
 
         <p>
-          I enjoy understanding how technology and data can improve business
-          decisions and financial processes. Through my coursework and personal
-          projects, I continue to strengthen both my analytical and technical
-          skills while exploring the future of digital finance.
+          Through my coursework and personal projects, I have developed skills in
+          financial analysis, programming and web development. I enjoy learning how
+          digital technologies can improve decision-making, streamline financial
+          processes and create better user experiences.
         </p>
 
         <p>
-          Outside the classroom, I actively volunteer with the
-          <span class="highlight">Sengkang North Youth Network</span>, where I
-          have had opportunities to organise community events, host programmes,
-          and work alongside volunteers and community partners. These experiences
-          have strengthened my communication, teamwork and confidence in working
-          with people from different backgrounds.
+          Beyond academics, I actively volunteer with
+          <span class="highlight">Sengkang North Youth Network</span>, where I have
+          organised community events, emceed programmes and engaged residents through
+          outreach initiatives. These experiences have strengthened my communication,
+          teamwork, leadership and confidence when working with people from diverse
+          backgrounds.
         </p>
 
         <p>
-          I believe that growth comes from stepping outside my comfort zone.
-          Whether I am building projects, volunteering, or taking on leadership
-          opportunities, I enjoy learning new skills, meeting new people and
-          continuously improving myself.
+          I believe growth comes from continuously challenging myself through new
+          experiences. Whether I'm building software, analysing financial data or
+          supporting community events, I enjoy learning, contributing to meaningful
+          projects and developing skills that prepare me for a career in finance and
+          FinTech.
         </p>
 
       </div>

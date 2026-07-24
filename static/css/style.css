@@ -813,9 +813,9 @@ img { max-width: 100%; display: block; }
 .slide img{
     width:100%;
     height:520px;
-    object-fit:cover;
+    object-fit:contain;
+    background:#13233b;
     border-radius:18px;
-    border:1px solid rgba(255,255,255,.08);
 }
 
 .photo-caption{
