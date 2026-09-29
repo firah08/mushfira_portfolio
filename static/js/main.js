@@ -98,71 +98,37 @@ const nextBtn = document.querySelector('.next');
 if (slides.length > 0) {
 
   let currentSlide = 0;
-  let isAnimating = false;
 
-  function showSlide(index, direction = 1) {
-    if (isAnimating || index === currentSlide) return;
+  function showSlide(index) {
 
-    const nextIndex =
-      index >= slides.length ? 0 :
-      index < 0 ? slides.length - 1 :
-      index;
+    slides.forEach(slide => slide.classList.remove('active'));
 
-    const current = slides[currentSlide];
-    const next = slides[nextIndex];
+    if (index >= slides.length) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = slides.length - 1;
+    } else {
+      currentSlide = index;
+    }
 
-    isAnimating = true;
-
-    // Prepare next slide
-    next.classList.add('next-slide');
-    next.style.setProperty('--direction', direction);
-
-    // Force browser to register the starting position
-    requestAnimationFrame(() => {
-      current.classList.add('leaving');
-      next.classList.add('active');
-
-      requestAnimationFrame(() => {
-        next.classList.remove('next-slide');
-      });
-    });
-
-    // Clean up after animation
-    setTimeout(() => {
-      current.classList.remove('active', 'leaving');
-      current.style.removeProperty('--direction');
-
-      currentSlide = nextIndex;
-      isAnimating = false;
-    }, 450);
+    slides[currentSlide].classList.add('active');
   }
 
   nextBtn.addEventListener('click', () => {
-    showSlide(currentSlide + 1, 1);
+    showSlide(currentSlide + 1);
   });
 
   prevBtn.addEventListener('click', () => {
-    showSlide(currentSlide - 1, -1);
+    showSlide(currentSlide - 1);
   });
 
-  // Auto-slide every 7 seconds
-  let autoSlide = setInterval(() => {
-    showSlide(currentSlide + 1, 1);
-  }, 7000);
+  // Auto slide every 7 seconds
+  setInterval(() => {
+    showSlide(currentSlide + 1);
+  }, 70000);
 
-  // Don't auto-change while the user is interacting
-  const carousel = document.querySelector('.about-carousel');
-
-  carousel.addEventListener('mouseenter', () => {
-    clearInterval(autoSlide);
-  });
-
-  carousel.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(() => {
-      showSlide(currentSlide + 1, 1);
-    }, 7000);
-  });
 }
+
 /* ── CURRENT YEAR ──────────────────────────────────────────────────────────── */
 const yearEl = document.getElementById('year');
 
